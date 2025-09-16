@@ -1,3 +1,16 @@
+// Find the highest/lowest frequency element
+
+// Optimized approach(Using map):
+
+// We can use a map of value and frequency pair, in which we can easily update the frequency of an element if it is already present in the map, if it is not present in the map then insert it in the map with frequency as 1. After completing all the iterations, we will find the element with the highest frequency and the element with the lowest frequency.
+
+// The steps are as follows:
+
+// Take a unordered_map<int, int> / HashMap of <Integer, Integer> pair.
+// Use a for loop to iterate the array.
+// If the element is not present in the map then insert it with frequency 1, otherwise increase the existing frequency by 1.
+// After visiting the whole array, we will find the element with the highest frequency and the element with the lowest frequency by iterating the map.
+
 import java.util.*;
 
 public class MaxMinFreq {
