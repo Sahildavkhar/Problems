@@ -60,7 +60,7 @@ public class MergeSort {
         int n = arr.length;
         System.out.println("Before Merge Sort");
         for(int i = 0; i < n; i++){
-            System.out.print(arr[i] + " ");
+            System.out.print(arr[i] + " ");     
         }
         System.out.println();
         mergeSort(arr, 0, n - 1);
