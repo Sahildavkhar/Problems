@@ -1,4 +1,4 @@
-public class InsertNodeDLL {
+public class DeleteNodeDLL {
     public static class Node {
         public int data;
         public Node next;
@@ -37,31 +37,45 @@ public class InsertNodeDLL {
         System.out.println();
     }
 
-    private static Node insertAtTail(Node head, int val){
-        Node newNode = new Node(val);
-        if(head == null){
-            return newNode;
+    private static Node DeleteTail(Node head, int val){
+        if( head == null || head.next == null){
+            return null;
         }
 
         Node temp = head;
         while(temp.next != null){
             temp = temp.next;
         }
+        Node newTail = temp.back;
+        newTail.next = null;
+        temp.back = null;
 
-        temp.next = newNode;
-        newNode.back = temp;
-        
+        return head;
+    }
+
+    private static Node DeleteHead(Node head, int val){
+        if(head == null || head.next == null){
+            return null;
+        }
+
+        Node prev = head;
+        head = head.next;
+        head.back = null;
+        prev.next = null;
+
         return head;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int [] arr = {1,2,3,4,5};
         Node head = NodeDLL(arr);
         System.out.print("Doubly Linked List: ");
         print(head);
 
-        System.out.print("After inserting at tail: ");
-        head = insertAtTail(head, 20);
-        print(head);
+        head = DeleteHead(head, 0);
+        System.out.print("After Deleting Head: ");
+        print(head);      
     }
 }
+
+
