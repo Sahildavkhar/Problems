@@ -20,7 +20,7 @@ class Node {
     }
 }
 
-public class InsertNode {
+public class InsertNodeLL {
     public static void printLL(Node head){
         while(head != null){
             System.out.print(head.data + " ");
