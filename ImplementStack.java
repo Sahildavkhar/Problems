@@ -1,3 +1,7 @@
+// Implement stack using array
+// Time Complexity: O(1) for push, pop, peek, and size operations
+// Space Complexity: O(n) where n is the maximum size of the stack
+
 class stack{
     int size = 1000;
     int [] arr = new int[size];
