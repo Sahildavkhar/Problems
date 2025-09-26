@@ -1,3 +1,6 @@
+// Time Complexity: O(n) for insertion at tail
+// Space Complexity: O(n) where n is the number of nodes in the doubly linked list
+
 public class InsertNodeDLL {
     public static class Node {
         public int data;
