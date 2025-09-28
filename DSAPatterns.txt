@@ -1,0 +1,315 @@
+# DSA Concepts, Patterns & Algorithms Reference
+
+## 1. Arrays
+
+### Core Concepts
+- Static vs Dynamic arrays
+- Memory layout and cache efficiency
+- Index-based access O(1)
+
+### Key Patterns & Algorithms
+- *Two Pointers*: Remove duplicates, pair sum, palindrome check
+- *Sliding Window*: Max subarray, substring problems, fixed/variable window
+- *Prefix Sum*: Range sum queries, subarray sum equals K
+- *Kadane's Algorithm*: Maximum subarray sum
+- *Dutch National Flag*: 3-way partitioning, sort colors
+- *Binary Search*: Search in sorted/rotated arrays
+- *Matrix Patterns*: Spiral traversal, rotate matrix, search 2D matrix
+
+### Problem Types
+- Subarray problems, duplicate finding, majority element, next greater element
+
+---
+
+## 2. Strings
+
+### Core Concepts
+- Immutable vs mutable strings
+- Character encoding (ASCII, Unicode)
+- String hashing
+
+### Key Patterns & Algorithms
+- *Two Pointers*: Palindrome validation, reverse string
+- *Sliding Window*: Longest substring without repeating chars
+- *KMP Algorithm*: Pattern matching
+- *Rabin-Karp*: String matching with rolling hash
+- *Manacher's Algorithm*: Longest palindromic substring
+- *Trie-based*: Prefix matching, autocomplete
+
+### Problem Types
+- Anagrams, palindromes, string matching, substring problems, regex matching
+
+---
+
+## 3. Linked Lists
+
+### Core Concepts
+- Singly, doubly, circular linked lists
+- Node structure and pointer manipulation
+- Memory allocation dynamics
+
+### Key Patterns & Algorithms
+- *Two Pointers*: Floyd's cycle detection, find middle, nth from end
+- *Reversal*: Reverse entire list, reverse in groups
+- *Merging*: Merge sorted lists, merge K sorted lists
+- *Dummy Node*: Simplify edge cases in insertion/deletion
+
+### Problem Types
+- Cycle detection, intersection point, palindrome check, addition of numbers
+
+---
+
+## 4. Stacks
+
+### Core Concepts
+- LIFO principle
+- Implementation using arrays/linked lists
+- Function call stack
+
+### Key Patterns & Algorithms
+- *Monotonic Stack*: Next greater/smaller element
+- *Expression Evaluation*: Infix to postfix, evaluate expressions
+- *Parentheses Matching*: Valid parentheses, longest valid parentheses
+- *Stack-based DFS*: Tree/graph traversal without recursion
+
+### Problem Types
+- Balanced parentheses, histogram problems, expression parsing, undo operations
+
+---
+
+## 5. Queues
+
+### Core Concepts
+- FIFO principle
+- Circular queues, deque
+- Priority queues (heaps)
+
+### Key Patterns & Algorithms
+- *BFS Traversal*: Level-order tree traversal, shortest path
+- *Sliding Window Maximum*: Using deque
+- *Task Scheduling*: Round-robin, priority-based
+- *Stream Processing*: Moving averages, real-time data
+
+### Problem Types
+- Level-order traversal, shortest path, task scheduling, stream problems
+
+---
+
+## 6. Trees
+
+### Core Concepts
+- Binary trees, BST, AVL, heap properties
+- Tree traversals and representations
+- Height, depth, balanced trees
+
+### Key Patterns & Algorithms
+- *DFS Traversals*: Preorder, inorder, postorder
+- *BFS/Level Order*: Level-by-level processing
+- *Tree DP*: Diameter, max path sum, subtree problems
+- *BST Operations*: Search, insert, delete, validate
+- *LCA (Lowest Common Ancestor)*: Binary lifting, Tarjan's algorithm
+- *Serialization*: Tree to string and back
+
+### Problem Types
+- Path sum problems, tree construction, BST validation, ancestor problems
+
+---
+
+## 7. Heaps/Priority Queues
+
+### Core Concepts
+- Min-heap, max-heap properties
+- Heap operations: insert, extract, heapify
+- Complete binary tree representation
+
+### Key Patterns & Algorithms
+- *Top K Problems*: K largest/smallest elements
+- *Merge K Sorted*: Using min-heap
+- *Dijkstra's Algorithm*: Shortest path with priority queue
+- *Huffman Coding*: Optimal prefix codes
+- *Median Finding*: Two heaps approach
+
+### Problem Types
+- Top K frequent, merge intervals, meeting rooms, task scheduling
+
+---
+
+## 8. Hashing
+
+### Core Concepts
+- Hash functions, collision resolution
+- Load factor, rehashing
+- Hash maps vs hash sets
+
+### Key Patterns & Algorithms
+- *Frequency Counting*: Character/element frequency
+- *Two Sum Pattern*: Using hash map for O(1) lookup
+- *Sliding Window with Hash*: Substring problems
+- *Group Anagrams*: Using sorted string as key
+- *LRU Cache*: Hash map + doubly linked list
+
+### Problem Types
+- Anagram grouping, duplicate detection, caching, frequency analysis
+
+---
+
+## 9. Graphs
+
+### Core Concepts
+- Directed vs undirected graphs
+- Adjacency list vs matrix representation
+- Weighted vs unweighted graphs
+
+### Key Patterns & Algorithms
+- *DFS*: Path finding, cycle detection, topological sort
+- *BFS*: Shortest path in unweighted graphs, level-wise processing
+- *Dijkstra's*: Shortest path in weighted graphs
+- *Floyd-Warshall*: All pairs shortest path
+- *Kruskal's/Prim's*: Minimum spanning tree
+- *Union-Find*: Connected components, cycle detection
+- *Topological Sort*: Course scheduling, dependency resolution
+
+### Problem Types
+- Path finding, cycle detection, connected components, shortest path, MST
+
+---
+
+## 10. Dynamic Programming
+
+### Core Concepts
+- Overlapping subproblems
+- Optimal substructure property
+- Memoization vs tabulation
+
+### Key Patterns & Algorithms
+- *Linear DP*: Fibonacci, climbing stairs, house robber
+- *2D DP*: Grid paths, edit distance, longest common subsequence
+- *Knapsack Patterns*: 0/1, unbounded, subset sum
+- *Interval DP*: Matrix chain multiplication, palindrome partitioning
+- *Tree DP*: Diameter, max path sum in trees
+- *Digit DP*: Numbers with constraints
+- *Bitmask DP*: Traveling salesman, subset enumeration
+
+### Problem Types
+- Optimization problems, counting problems, decision problems, game theory
+
+---
+
+## 11. Backtracking
+
+### Core Concepts
+- Exhaustive search with pruning
+- State space tree exploration
+- Choice, constraint, goal pattern
+
+### Key Patterns & Algorithms
+- *Permutations/Combinations*: Generate all possible arrangements
+- *Subset Generation*: Power set, subset sum
+- *N-Queens*: Constraint satisfaction
+- *Sudoku Solver*: Grid-based backtracking
+- *Word Search*: 2D grid exploration
+- *Palindrome Partitioning*: String division problems
+
+### Problem Types
+- Combination generation, puzzle solving, path finding with constraints
+
+---
+
+## 12. Greedy Algorithms
+
+### Core Concepts
+- Local optimal choice leading to global optimum
+- Proof of correctness required
+- Activity selection paradigm
+
+### Key Patterns & Algorithms
+- *Interval Scheduling*: Activity selection, meeting rooms
+- *Huffman Coding*: Optimal prefix codes
+- *Fractional Knapsack*: Greedy vs DP knapsack
+- *Minimum Coins*: Coin change with greedy choice
+- *Job Scheduling*: Maximize profit with deadlines
+
+### Problem Types
+- Scheduling problems, optimization with constraints, resource allocation
+
+---
+
+## 13. Sorting & Searching
+
+### Core Concepts
+- Comparison vs non-comparison sorting
+- Stable vs unstable sorting
+- Time/space complexity trade-offs
+
+### Key Algorithms
+- *Quick Sort*: Divide and conquer, pivot selection
+- *Merge Sort*: Stable sorting, external sorting
+- *Heap Sort*: In-place sorting using heaps
+- *Counting/Radix Sort*: Non-comparison sorting
+- *Binary Search*: Search in sorted arrays, bisection
+- *Ternary Search*: Unimodal function optimization
+
+### Problem Types
+- Custom sorting, search in rotated arrays, find peak element
+
+---
+
+## 14. Bit Manipulation
+
+### Core Concepts
+- Bitwise operations: AND, OR, XOR, NOT, shifts
+- Two's complement representation
+- Bit masks and flags
+
+### Key Patterns & Algorithms
+- *XOR Properties*: Find unique number, missing number
+- *Bit Counting*: Brian Kernighan's algorithm, population count
+- *Power of 2*: Check and find nearest power
+- *Subset Generation*: Using bitmasks
+- *Single Number*: XOR-based solutions
+
+### Problem Types
+- Number manipulation, subset enumeration, optimization using bits
+
+---
+
+## 15. Mathematical Algorithms
+
+### Core Concepts
+- Number theory fundamentals
+- Modular arithmetic
+- Combinatorics basics
+
+### Key Algorithms
+- *GCD/LCM*: Euclidean algorithm, extended Euclidean
+- *Prime Numbers*: Sieve of Eratosthenes, prime factorization
+- *Fast Exponentiation*: Binary exponentiation, modular exponentiation
+- *Matrix Exponentiation*: Fibonacci, linear recurrence relations
+- *Catalan Numbers*: Parentheses, binary trees counting
+
+### Problem Types
+- Number theory problems, combinatorial counting, geometric problems
+
+---
+
+## Quick Reference Tips
+
+### Time Complexity Patterns
+- *O(1)*: Hash operations, array access
+- *O(log n)*: Binary search, heap operations
+- *O(n)*: Linear scan, simple DP
+- *O(n log n)*: Sorting, divide and conquer
+- *O(n²)*: Nested loops, some DP problems
+- *O(2ⁿ)*: Backtracking, subset generation
+
+### Space Complexity Optimization
+- *In-place algorithms*: Constant extra space
+- *Memoization vs Tabulation*: Space-time trade-offs
+- *Rolling arrays*: Optimize DP space usage
+
+### Problem-Solving Approach
+1. *Understand the problem*: Edge cases, constraints
+2. *Identify patterns*: Which category does it fall into?
+3. *Choose approach*: Brute force → Optimize → Code
+4. *Test thoroughly*: Edge cases, large inputs
+5. *Analyze complexity*: Time and space requirements
