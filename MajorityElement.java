@@ -4,7 +4,7 @@ public class MajorityElement {
     public int majorityElement(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < arr.length; i++){
-            if(map.get(arr[i]) == null){
+            if(!map.containsKey(arr[i])){
                 map.put(arr[i], 1);
             }
             else{
@@ -16,12 +16,12 @@ public class MajorityElement {
                 }
             }
         }
-        return -1;
+        return 0;
     }
 
     public static void main(String[] args) {
         MajorityElement me = new MajorityElement();
-        int arr[] = {3, 2, 3};
+        int arr[] = {3, 2, 3, 2};
         System.out.println("Majority Element is: " + me.majorityElement(arr));
     }
 }
