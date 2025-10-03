@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TransposeMat {
     public static void transpose(int[][] mat) {
         int n = mat.length;
@@ -20,12 +22,17 @@ public class TransposeMat {
     }
 
     public static void main(String[] args) {
-        int[][] mat = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] mat = new int[n][m];
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<m; j++) {
+                mat[i][j] = sc.nextInt();
+            }
+        }
         transpose(mat);
+        sc.close();
     }
   
 }
