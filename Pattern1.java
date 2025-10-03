@@ -14,16 +14,12 @@ public class Pattern1 {
     public static void main(String[] args){
         int n = 10;
         int size = 2*n - 1;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < size; j++){
-                if(j >= n - 1 - i && j <= n - 1 + i){
-                    System.out.print("1");
-                }
-                else{
-                    System.err.print("0");
-                }
-            }
-            System.out.println();
-        }
+        for(int i=1; i<=n; i++) {
+    for(int j=1; j<=n-i; j++) System.out.print("0");
+    for(int j=1; j<=2*i-1; j++) System.out.print("1");
+    for(int j=1; j<=n-i; j++) System.out.print("0");
+    System.out.println();
+}
+
     }
 }

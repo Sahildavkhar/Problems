@@ -22,7 +22,8 @@ public class Reverse {
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
-            reverseArray(arr, start++, end--);
+            start++;
+            end--;
         }
     }
 
