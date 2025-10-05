@@ -5,6 +5,8 @@
 // Select an element in each iteration from the unsorted array(using a loop).
 // Place it in its corresponding position in the sorted part and shift the remaining elements accordingly (using an inner loop and swapping).
 // The “inner while loop” basically shifts the elements using swapping.
+// Time Complexity: O(n^2) as there are two nested loops.
+// Auxiliary Space: O(1)
 
 public class InsertionSort {
     public static void InsertionSort(int[] arr, int n){

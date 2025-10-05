@@ -46,7 +46,6 @@ class QuickSort {
         }
     }
     public static List<Integer> quickSort(List<Integer> arr) {
-        // Write your code here.
         qs(arr, 0, arr.size() - 1);
         return arr;
     }
