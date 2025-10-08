@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Capgemini {
+public class Capgemini1 {
 
     public static int isFibonacci(int n){
         int a = 0;
