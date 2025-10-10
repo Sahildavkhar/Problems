@@ -13,7 +13,7 @@
 
 // For Eg , arr[]={1,2,3,4,5,6,7} , k=2
 
-public class RotateArray {
+public class RotateArray1 {
     public static void Reverse(int[] nums, int start, int end) {
         while(start < end){
             int temp = nums[start];
