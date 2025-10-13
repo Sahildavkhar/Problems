@@ -1,3 +1,4 @@
+package Capgemini;
 public class Capgemini7 {
     public static int findLongestEvenSubstring(String s){
         int n = s.length();

@@ -1,3 +1,4 @@
+package Capgemini;
 public class Capgemini10 {
     public static int minCost(int[] arr, int k){
         int n = arr.length;

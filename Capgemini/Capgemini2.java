@@ -1,3 +1,4 @@
+package Capgemini;
 public class Capgemini2 {
     public String MoveHash(String s){
         int left = s.length() - 1;

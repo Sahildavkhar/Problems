@@ -1,3 +1,4 @@
+package Capgemini;
 public class Capgemini5 {
     public String replaceConsonants(String s){
         String vowels = "aeiou";

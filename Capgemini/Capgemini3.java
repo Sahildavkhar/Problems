@@ -1,3 +1,4 @@
+package Capgemini;
 import java.util.HashMap;
 
 public class Capgemini3 {

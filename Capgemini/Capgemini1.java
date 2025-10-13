@@ -1,3 +1,4 @@
+package Capgemini;
 import java.util.*;
 
 public class Capgemini1 {
@@ -11,12 +12,10 @@ public class Capgemini1 {
             b = c;
 
             if(c == n){
-            return true;
+                return true;
             }
         }
         return false;
-        
-        
     }
 
     public static void main(String[] args) {

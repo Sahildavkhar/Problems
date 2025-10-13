@@ -1,3 +1,4 @@
+package Capgemini;
 public class Capgemini6 {
     public static void printWords(String s){
         StringBuilder word = new StringBuilder();
