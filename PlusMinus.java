@@ -1,3 +1,9 @@
+// Java program to calculate the ratios of positive, negative and zero elements in an array
+// and print the decimal value of each fraction on a new line with 6 places after the decimal.
+// The function plusMinus has the following parameter(s):
+// arr: an array of integers
+// Print the ratios of positive, negative and zero values in the array. Each value should be printed on a separate line with 6 digits after the decimal point.
+
 import java.util.*;
 
 class PlusMinus{
