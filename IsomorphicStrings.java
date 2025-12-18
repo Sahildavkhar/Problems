@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/isomorphic-strings/
+
 import java.util.HashMap;
 
 public class IsomorphicStrings {
