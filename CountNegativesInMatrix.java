@@ -22,6 +22,6 @@ public class CountNegativesInMatrix{
             {-1, -1, -2, -3}
         };
         int result = counter.countNegatives(grid);
-        System.out.println(result);
+        System.out.println("Answer is " +result);
     }
 }
